@@ -1,0 +1,39 @@
+<div class="tb-position--relative main" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
+    <div class="tb-container tb-position--relative container">
+        <div fxLayout="column" fxLayoutAlign="start stretch">
+            <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" fxLayout="row"
+                fxLayoutAlign="start end">
+                <h4 class="title current-typo--h4 tb-flex--shrink-0">Project Experiences</h4>
+                <div class="tb-width--12"></div>
+                <div fxFlex="60" class="line tb-color-bg--black"></div>
+                <div fxFlex class=""></div>
+            </div>
+            
+
+            <div ngClass.gt-xs="tb-height--10" ngClass.xs="tb-height--10"></div>
+
+            <div fxLayout="row" fxLayout.xs="column">
+                <div fxFlex fxFlex.xs="none" fxFlex.sm="70" fxLayout="column">
+                    <div ngClass.gt-xs="tb-height--64" ngClass.xs="tb-height--20"></div>
+
+                    <div class="project-experience-container">
+                        <div class="project" *ngFor="let project of projects">
+                            <div class="project-header">
+                                <h3 class="project-name">{{ project.name }}</h3>
+                                <span class="project-platform">{{ project.platform }}</span>
+                            </div>
+                            <div class="project-details">
+                                <p>{{ project.description }}</p>
+                                <ul>
+                                    <li *ngFor="let responsibility of project.responsibilities">
+                                        <span class="bullet">&bull;</span> {{ responsibility }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
