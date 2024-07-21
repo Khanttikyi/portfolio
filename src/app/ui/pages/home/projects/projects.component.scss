@@ -1,92 +1,90 @@
-.project-experience-container {
-    padding: 20px;
-    // background-color: #f9f9f9;
-    border-radius: 8px;
-    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .project {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  
-  .project-header {
+/* Container for Projects */
+.projects-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px; /* Space between projects */
+  }
+  
+  /* Each Project Item */
+  .project-item {
+    display: flex;
     align-items: center;
+    gap: 20px; /* Space between name and screenshots */
+    padding: 10px;
+    flex-wrap: nowrap; /* Prevent wrapping of items */
   }
   
+  /* Alignment for Left Image */
+  .left-image {
+    flex-direction: row;
+  }
+  
+  /* Alignment for Right Image */
+  .right-image {
+    flex-direction: row-reverse;
+  }
+  
+  /* Project Name */
   .project-name {
-    font-size: 1.2rem;
-    color: #ea9116; /* Change color as desired */
-    font-weight: bold;
-  }
-  
-  .project-platform {
-    font-style: italic;
-    // color: #595656;
-    color: #2196F3;
-
-  }
-  
-  .project-details {
-    margin-top: 10px;
-  }
-  
-  .project-details ul {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 0;
-  }
-  
-  .project-details li {
-    margin-bottom: 8px;
-    font-size: 1rem; /* Increase font size as desired */
-  }
-  
-  .bullet {
-    color: #ea9116; /* Bullet color */
-    font-size: 1.2rem; /* Bullet font size */
-    margin-right: 6px;
-  }
-  
-  .work-experience-container {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    color: #333;
-  }
-  
-  
-  .experience {
-    border-bottom: 1px solid #e0e0e0;
-    padding: 10px 0;
-  }
-  
-  .experience-period {
-    font-weight: bold;
-    color: #757575;
-  }
-  
-  .experience-details h3 {
-    margin: 5px 0;
-    color: #2196F3;
-  }
-  
-  .experience-details h4 {
-    margin: 5px 0;
-    font-style: italic;
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
     color: #FF9800;
+    font-weight: bold;
   }
   
-  ul {
-    margin: 10px 0;
-    padding-left: 20px;
+  /* Screenshot Container */
+  .screenshot-container {
+    display: flex;
+    gap: 8px; /* Space between screenshots */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    flex: 2; /* Adjust flex to control the width */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+    padding: 10px 0; /* Optional: Add padding for better appearance */
   }
   
-  li {
-    margin-bottom: 5px;
-    line-height: 1.5;
+  /* Screenshot */
+  .screenshot {
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Adjust size as needed */
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  
+  .screenshot img {
+    // width: 100%;
+    // height: 100%;
+    object-fit: cover;
+  }
+  
+  .screenshot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 600px) {
+    .project-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .left-image, .right-image {
+      flex-direction: column;
+    }
+  
+    .screenshot-container {
+      overflow-x: auto; /* Ensure horizontal scrolling */
+      white-space: nowrap; /* Prevent screenshots from wrapping */
+    }
+  
+    .screenshot {
+      display: inline-block; /* Keep screenshots in a row */
+    }
+  }
+  
   
   .main {
     // overflow-x: hidden;

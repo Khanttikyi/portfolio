@@ -98,3 +98,49 @@
         }
     }
 }
+
+.image-container {
+    padding: 16px;
+}
+
+.image-area {
+    position: relative;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-details {
+    padding: 16px;
+}
+
+.profile-name {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.profile-description {
+    font-size: 1.2em;
+    color: #605e5e;
+    margin-top: 8px;
+}

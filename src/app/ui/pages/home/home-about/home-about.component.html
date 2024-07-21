@@ -83,6 +83,9 @@
                         <div class="skill" style="background-color: #6F73C3;">
                             <h5 class="current-typo--h5 tb-color--white">Flutter</h5>
                         </div>
+                        <div class="skill" style="background-color: #027DFD;">
+                            <h5 class="current-typo--h5 tb-color--white">React</h5>
+                        </div>
                     </div>
                     <div class="tb-height--8"></div>
 
@@ -103,6 +106,9 @@
                         <div class="skill" style="background-color: #027DFD;">
                             <h5 class="current-typo--h5 tb-color--white">JavaScript</h5>
                         </div>
+                        <div class="skill" style="background-color: #6F73C3;">
+                            <h5 class="current-typo--h5 tb-color--white">NodeJs</h5>
+                        </div>
                     </div>
 
 
@@ -120,30 +126,25 @@
 
                         </a>
 
-                        <!-- <div class="btn-area-hire">
-
-                            <a mat-ripple class="unlink btn-hire tb-color-bg--white" fxLayout="row"
-                                fxLayoutAlign="center center"
-                                href="https://gitter.im/JunkieLabs/common?utm_source=share-link&utm_medium=link&utm_campaign=share-link/"
-                                target="_blank">
-
-                                <p class="current-typo--button-medium tb-font-weight--medium tb-color--black">Hire me
-                                </p>
-                            </a>
-
-                        </div> -->
+                      
 
                     </div>
 
                 </div>
-                <div fxFlex.xs="none" fxFlex [fxFlexOrder.xs]="1" [fxFlexOrder]=' 2' class="image-container"
-                    fxLayout="column" fxLayoutAlign="center stretch">
-                    <div [@transitionImageScale]="{value:_mTriggerAnim, params: {animDelay: 800}}"
-                        class="tb-text--align-center image-area" #imageAreaView>
-                        <img class="image tb-position--relative" src="assets/img/avatar/profile.jpg" />
-                    </div>
-
-                </div>
+                <div fxFlex.xs="none" fxFlex [fxFlexOrder.xs]="1" [fxFlexOrder]='2' class="image-container"
+                fxLayout="column" fxLayoutAlign="center stretch">
+               <div [@transitionImageScale]="{value:_mTriggerAnim, params: {animDelay: 800}}"
+                    class="tb-text--align-center image-area" #imageAreaView>
+                   <div class="profile-card">
+                       <img class="profile-image tb-position--relative" src="assets/img/avatar/profile.jpg" alt="Profile Image" />
+                       <div class="profile-details">
+                           <h3 class="profile-name">KHANT TI KYI</h3>
+                           <p class="profile-description">Senior Frontend Developer at Blue Stone Solution Co., Ltd.</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
 
             </div>
 

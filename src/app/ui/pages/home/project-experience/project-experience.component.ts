@@ -24,23 +24,30 @@ export class ProjectExperienceComponent implements OnInit {
   mOnceAnimated = false
   projects = [
     {
+      name: 'Coca Cola Myanmar (Invoice Delivery)',
+      platform: '(Android/IOS) with Angular',
+      description: 'Coca Cola Myanmar (Invoice Delivery) is the application that developed with Angular/Ionic for mobile android and IOS.',
+      responsibilities: [
+        'Collaborated with a team of designers, backend developers, and QA testers to deliver high-quality solutions that met client requirements.',
+        'Developed responsive and user-friendly interfaces for Android and iOS platforms using Angular and Ionic frameworks.',
+      ]
+    },
+    {
       name: 'Danone Myanmar',
       platform: '(Android/IOS) with Angular',
       description: 'Danone Myanmar is the application that developed with Angular/Ionic for mobile android and IOS.',
       responsibilities: [
-        'Played a key role in developing cross-platform mobile applications using Angular and Ionic frameworks for both offline and online use.',
         'Collaborated with a team of designers, backend developers, and QA testers to deliver high-quality solutions that met client requirements.',
         'Developed responsive and user-friendly interfaces for Android and iOS platforms using Angular and Ionic frameworks.',
-        'Implemented offline capabilities using service workers and caching mechanisms to ensure seamless performance in low-connectivity environments.',
-        'Integrated platform-specific features and APIs for both Android and iOS, optimizing the applications for each platform\'s unique requirements.'
       ]
     },
     {
       name: 'Dai-ichi Insurance Myanmar',
       platform: '(Android/IOS) with Angular',
-      description: 'Dai-ichi Insurance Myanmar is the application that developed with Angular/Ionic for mobile android and IOS',
+      description: 'Dai-ichi Insurance Myanmar is mobile application which need to support both online and offline',
       responsibilities: [
         'Played a key role in developing cross-platform mobile applications using Angular and Ionic frameworks for both offline and online use.',
+        'Integrated with Third Party API which is from ByteForce',
         'Collaborated with a team of designers, backend developers, and QA testers to deliver high-quality solutions that met client requirements.',
         'Developed responsive and user-friendly interfaces for Android and iOS platforms using Angular and Ionic frameworks.',
         'Implemented offline capabilities using service workers and caching mechanisms to ensure seamless performance in low-connectivity environments.',
@@ -48,11 +55,23 @@ export class ProjectExperienceComponent implements OnInit {
       ]
     },    
     {
-      name: 'BNK Myanmar Microfinance',
+      name: 'BNK Myanmar Microfinance (Employee App)',
       platform: '(Android/IOS) with Angular',
-      description: "BNK Myanmar is the Microfinance company of Korea-Myanmar company and it had Agent application and Customer application to apply loan and process the hole microfinance process. BNK SUM is a microfinance application that for BNK 's customers. The customers can request and calculate loan for each loan type. In BNK Myanmar, I developed the frontend side with Angular/Ionic.",
+      description: "BNK Myanmar is the Microfinance company of Korea-Myanmar company and it had Agent application and Customer application to apply loan and process the hole microfinance process.",
       responsibilities: [
-        'Developed the frontend side with Angular/Ionic.'
+        'Developed the frontend side with Angular/Ionic.',
+        'Played a key role in developing cross-platform mobile applications using Angular and Ionic frameworks for both offline and online use.',
+        'Integrated with Third Party API which is from BNK Korea Team',
+      ]
+    },
+    {
+      name: 'BNK Myanmar Microfinance (BNK SUM)',
+      platform: '(Android/IOS) with Angular',
+      description: " BNK SUM is a microfinance application that for BNK 's customers. The customers can request and calculate loan for each loan type. In BNK Myanmar.",
+      responsibilities: [
+        'Developed the frontend side with Angular/Ionic.',
+        'Played a key role in developing cross-platform mobile applications using Angular and Ionic frameworks for both offline and online use.',
+        'Integrated with Third Party API which is from BNK Korea Team',
       ]
     },
     {

@@ -32,6 +32,7 @@ import { ClientAppsComponent } from './home-showcases/client-apps/client-apps.co
 import { MyappItemComponent } from './home-showcases/myapp-item/myapp-item.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { ProjectExperienceComponent } from './project-experience/project-experience.component';
+import { ProjectsComponent } from './projects/projects.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -49,7 +50,8 @@ import { ProjectExperienceComponent } from './project-experience/project-experie
     ClientAppsComponent,
     MyappItemComponent,
     WorkExperienceComponent,
-    ProjectExperienceComponent
+    ProjectExperienceComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule,
