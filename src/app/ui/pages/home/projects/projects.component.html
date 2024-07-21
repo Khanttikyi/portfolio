@@ -22,7 +22,7 @@
                 <!-- Screenshot Container -->
                 <div class="screenshot-container">
                     <!-- Screenshot Iteration -->
-                    <div class="screenshot" *ngFor="let screenshot of project.screenshots">
+                    <div class="screenshot" [ngClass]="{'screenshot':project.name!='KRIS','screenshot2':project.name=='KRIS'}" *ngFor="let screenshot of project.screenshots">
                         <img [src]="screenshot" alt="Project Screenshot" />
                     </div>
                 </div>

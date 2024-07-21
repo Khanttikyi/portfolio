@@ -24,10 +24,10 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Dai-Ichi Insurance Myanmar',
       screenshots: [
-         'assets/img/projects/dlmm3.png' ,
+         'assets/img/projects/dlmm.png' ,
          'assets/img/projects/dlmm2.png' ,
          'assets/img/projects/dlmm1.png',
-         'assets/img/projects/dlmm.png'
+         'assets/img/projects/dlmm3.png'
       ]
     },
     {
@@ -37,6 +37,24 @@ export class ProjectsComponent implements OnInit {
          'assets/img/projects/kbz-ms-2.jpeg' ,
          'assets/img/projects/kbz-ms-1.jpeg',
          'assets/img/projects/kbz-ms.jpeg'
+      ]
+    },
+    {
+      name: 'KRIS',
+      screenshots: [
+         'assets/img/projects/kbz-sale.png' ,
+         'assets/img/projects/kbz-sale3.png' ,
+         'assets/img/projects/kbz-sale2.png',
+         'assets/img/projects/kbz-sale4.png'
+      ]
+    },
+    {
+      name: 'BNK',
+      screenshots: [
+         'assets/img/projects/bnk.jpeg' ,
+         'assets/img/projects/bnk4.jpeg' ,
+         'assets/img/projects/bnk1.jpeg',
+         'assets/img/projects/bnk3.jpeg'
       ]
     },
    
