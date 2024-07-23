@@ -11,7 +11,7 @@
 
             <div ngClass.gt-xs="tb-height--10" ngClass.xs="tb-height--10"></div>
         </div>
-        <div class="projects-container">
+        <div class="projects-container" [@transitionText]="{value:_mTriggerAnim, params:{animDelay:400}}">
             <!-- Project Iteration -->
             <div *ngFor="let project of projects; let i = index" class="project-item"
                 [ngClass]="{'left-image': i % 2 === 0, 'right-image': i % 2 !== 0}">
@@ -19,6 +19,7 @@
                 <div class="project-name">
                     <h4>{{ project.name }}</h4>
                 </div>
+                
                 <!-- Screenshot Container -->
                 <div class="screenshot-container">
                     <!-- Screenshot Iteration -->

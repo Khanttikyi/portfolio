@@ -40,7 +40,7 @@ export class ProjectsComponent implements OnInit {
       ]
     },
     {
-      name: 'KRIS',
+      name: 'KBZMS Real Time Insurance System',
       screenshots: [
          'assets/img/projects/kbz-sale.png' ,
          'assets/img/projects/kbz-sale3.png' ,
@@ -49,7 +49,7 @@ export class ProjectsComponent implements OnInit {
       ]
     },
     {
-      name: 'BNK',
+      name: 'BNK Capital Myanmar',
       screenshots: [
          'assets/img/projects/bnk.jpeg' ,
          'assets/img/projects/bnk4.jpeg' ,

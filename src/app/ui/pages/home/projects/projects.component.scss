@@ -39,7 +39,7 @@
 /* Screenshot Container */
 .screenshot-container {
     display: flex;
-    gap: 8px; /* Space between screenshots */
+    gap: 12px; /* Space between screenshots */
     overflow-x: auto; /* Allow horizontal scrolling */
     flex: 2; /* Adjust flex to control the width */
     max-width: 100%; /* Ensure it doesn't overflow the container */
@@ -113,6 +113,7 @@
    
     }
 }
+
   
   
   .main {
